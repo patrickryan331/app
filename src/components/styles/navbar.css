@@ -1,4 +1,19 @@
-.menu{
+.navbar  div{
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+
+
+}
+.navbar .header{
+    background-color: rgb(182, 182, 182);
+}
+.navbar label{
+    
+}
+
+.navbar .menu{
     margin-top: 15px;
     display: flex;
     justify-content: space-around;
@@ -7,7 +22,7 @@
 }
 
 
-a{
+.navbar a{
     text-transform: uppercase;
     font-size: 18px;
     color: rgb(33, 149, 217);
@@ -16,6 +31,12 @@ a{
     text-decoration: none;
 }
 
-a:hover{
+.navbar a:hover{
     color: rgb(255, 85, 0);
+}
+
+
+.headerTitle{
+
+
 }
