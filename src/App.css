@@ -1,6 +1,14 @@
+:root{
+  --background: #eaeaea;
+  --border: #999 ;
+  --primary: #75a8f6;
+}
+
 
 .App {
   text-align: center;
+  background-color: rgb(56, 70, 136);
+  /* background-image: url(/public/images/background1.jpg); */
 }
 
 .App-logo {

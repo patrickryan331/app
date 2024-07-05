@@ -1,47 +1,63 @@
 import './styles/catalog.css';
 import Product from '../components/product';
 
+const catagories = [  'surfboard', 'surf wax', 'wetsuit',]
+
 const data = [
     {
-        "title": "Bananna",
-        "price": 11.11,
-        "catagory": "fruit",
-        "image": "bananna.png",
+        "title": "Short Board 5'11",
+        "price": 499.99,
+        "catagory": "surfboard",
+        "image": "product1.webp",
         "_id": "123abc"
     },
     {
-        "title": "test 2",
-        "price": 22.22,
-        "catagory": "fruit",
-        "image": "test2img.png",
+        "title": "Fish Tail 7'5",
+        "price": 575.99,
+        "catagory": "surfboard",
+        "image": "product2.jpg",
         "_id": "456rty"
     },
     {
-        "title": "test 3",
-        "price": 33.33,
-        "catagory": "fruit",
-        "image": "test3img.png",
+        "title": "Fun Board 8'0",
+        "price": 799.99,
+        "catagory": "surfboard",
+        "image": "product3.webp",
         "_id": "789poy"
     },
     {
-        "title": "test 4",
-        "price": 44.44,
-        "catagory": "fruit",
-        "image": "test4img.png",
+        "title": "Long Board 9'0",
+        "price": 999.99,
+        "catagory": "surfboard",
+        "image": "product4.jpg",
         "_id": "853sgj"
     },
     {
-        "title": "test 5",
-        "price": 55.55,
-        "catagory": "fruit",
-        "image": "test5img.png",
+        "title": "Sticky Bumps 6 pack",
+        "price": 19.99,
+        "catagory": "surf wax",
+        "image": "wax1sticky.jpg",
+        "_id": "853sgj"
+    },
+    {
+        "title": "Mr Zoggs 6 pack",
+        "price": 24.99,
+        "catagory": "surf wax",
+        "image": "wax2mrzog.jpg",
         "_id": "825fhs"
     },
     {
-        "title": "test 6",
-        "price": 66.66,
-        "catagory": "fruit",
-        "image": "test6img.png",
+        "title": "Full Wetsuit",
+        "price": 149.99,
+        "catagory": "wetsuit",
+        "image": "wetsuitLong.jpg",
+        "_id": "397kvd"
+    },
+    {
+        "title": "Short Wetsuit",
+        "price": 99.99,
+        "catagory": "wetsuit",
+        "image": "wetsuitShort.jpg",
         "_id": "397kvd"
     },
 ];
@@ -50,14 +66,15 @@ const data = [
 function Catalog(){ 
     return(
         <div className='catalog'>
-            <h1>This is the catalog</h1>
+            <h1>Eastern Shore Surf Shop</h1>
         
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
+            <div className='filterButton'>
+            {catagories.map(cat => <button className='btn btn-primary'>{cat}</button>)}
+        </div>
+        
+            {data.map(prod => <Product info={prod} />)}
+
+
         </div>
     );
 

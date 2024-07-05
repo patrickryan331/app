@@ -5,10 +5,10 @@ function Footer(){
         <div className='footer'>
             <footer className ='content'>
                 <div>
-                    <span className='footerspan'>Learning React. 2024 © All Rights Reserved</span>
+                    <span className='footerspan'>Eastern Shore Surf Shop 2024 © All Rights Reserved</span>
                 </div>
                 <div>
-                    <span className='footerspan'>I Am Learning React!!!</span>
+                    <span className='footerspan'>Surfs Up Vibes Up!</span>
                 </div>
             </footer>
         </div>
