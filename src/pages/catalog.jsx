@@ -1,7 +1,7 @@
 import './styles/catalog.css';
 import Product from '../components/product';
 
-const catagories = [  'surfboard', 'surf wax', 'wetsuit',]
+const catagories = [  'Surfboard', 'Surf Wax', 'Wetsuit',]
 
 const data = [
     {
@@ -69,7 +69,8 @@ function Catalog(){
             <h1>Eastern Shore Surf Shop</h1>
         
             <div className='filterButton'>
-            {catagories.map(cat => <button className='btn btn-primary'>{cat}</button>)}
+            {/* {catagories.map(cat => <button className='btn btn-primary'>{cat}</button>)} */}
+            {catagories.map(cat => <button className='catButton'>{cat}</button>)}
         </div>
         
             {data.map(prod => <Product info={prod} />)}
